@@ -1,0 +1,6 @@
+javafx-sdk-24.0.2/
+bin/
+.vscode/extensions.json
+*.class
+*.log
+.DS_Store

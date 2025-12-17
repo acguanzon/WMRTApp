@@ -1,0 +1,17 @@
+@echo off
+REM Set JavaFX SDK lib path - update this if your path is different
+set JAVAFX_LIB="C:\Users\HOME\Desktop\CODING\wastemanagement\javafx-sdk-24.0.2\lib"
+
+REM Compile the Java source file inside package 'app'
+javac --module-path %JAVAFX_LIB% --add-modules javafx.controls,javafx.fxml -d out src\app\WMRTApp.java
+
+if errorlevel 1 (
+    echo Compilation failed.
+    pause
+    exit /b 1
+)
+
+REM Run the JavaFX application with fully qualified class name
+java --module-path %JAVAFX_LIB% --add-modules javafx.controls,javafx.fxml -cp out app.WMRTApp
+
+pause

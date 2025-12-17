@@ -1,0 +1,61 @@
+:root {
+    -fx-font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+    -wmrt-accent: #00ffc6;
+    -wmrt-accent-2: #8a2be2;
+    -wmrt-bg: #0b0f14;
+    -wmrt-surface: #131a22;
+    -wmrt-text: #e6f1ff;
+}
+.root {
+    -fx-base: -wmrt-bg;
+    -fx-background-color: linear-gradient(to bottom, #0b0f14, #0c1118);
+    -fx-text-fill: -wmrt-text;
+}
+Label { -fx-text-fill: -wmrt-text; }
+TabPane { -fx-background-color: transparent; }
+TabPane .tab-header-area { -fx-background-color: transparent; }
+TabPane .tab-header-background { -fx-background-color: transparent; }
+TabPane .tab {
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+    -fx-background-color: transparent;
+}
+TabPane .tab:selected {
+    -fx-background-color: rgba(138,43,226,0.18);
+    -fx-border-color: -wmrt-accent-2;
+    -fx-border-width: 0 0 2 0;
+}
+Button {
+    -fx-background-color: rgba(0,255,198,0.12);
+    -fx-border-color: -wmrt-accent;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: -wmrt-text;
+    -fx-cursor: hand;
+}
+Button:hover {
+    -fx-background-color: rgba(0,255,198,0.22);
+}
+TextField, PasswordField, ComboBox, TextArea {
+    -fx-background-color: -wmrt-surface;
+    -fx-text-fill: -wmrt-text;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: rgba(255,255,255,0.08);
+}
+TableView {
+    -fx-background-color: -wmrt-surface;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.06);
+}
+TableView .column-header-background { -fx-background-color: rgba(138,43,226,0.18); }
+TableView .column-header, TableView .filler {
+    -fx-size: 36px;
+    -fx-background-color: transparent;
+}
+TableRowCell:filled:selected, TableCell:filled:selected {
+    -fx-background-color: rgba(0,255,198,0.20);
+}
+Separator { -fx-background-color: rgba(255,255,255,0.08); }
+#routeCanvas, Canvas { -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 18, 0.2, 0, 4); }

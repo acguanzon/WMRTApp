@@ -1,0 +1,72 @@
+.form-card {
+    -fx-background-color: rgba(19,26,34,0.8);
+    -fx-background-radius: 12;
+    -fx-padding: 14;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 12;
+}
+.form-card Label { -fx-text-fill: -wmrt-text; }
+.form-card TextField, .form-card ComboBox {
+    -fx-background-color: #0f151c;
+    -fx-text-fill: -wmrt-text;
+    -fx-border-color: rgba(0,255,198,0.25);
+}
+#submitRecordBtn {
+    -fx-background-color: linear-gradient(to right, rgba(0,255,198,0.25), rgba(138,43,226,0.25));
+}
+#submitRecordBtn:hover {
+    -fx-background-color: linear-gradient(to right, rgba(0,255,198,0.45), rgba(138,43,226,0.45));
+}
+
+/* Custom ComboBox styling for edit dialog */
+.custom-combo {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #00ff88;
+    -fx-border-width: 2px;
+    -fx-font-size: 14px;
+}
+
+.custom-combo .text {
+    -fx-fill: #ffffff !important;
+    -fx-font-size: 14px;
+}
+
+.custom-combo .arrow-button {
+    -fx-background-color: #2a2a2a;
+}
+
+.custom-combo .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.custom-combo .combo-box-base {
+    -fx-text-fill: #ffffff;
+}
+
+.custom-combo .combo-box-base .text {
+    -fx-fill: #ffffff;
+}
+
+.custom-combo .list-view {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #00ff88;
+    -fx-border-width: 1px;
+}
+
+.custom-combo .list-cell {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.custom-combo .list-cell:selected {
+    -fx-background-color: #00ff88;
+    -fx-text-fill: #ffffff;
+}
+
+.custom-combo .list-cell:hover {
+    -fx-background-color: #00ff88;
+    -fx-text-fill: #ffffff;
+}

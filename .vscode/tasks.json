@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile-javafx",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path",
+                "javafx-sdk-24.0.2\\lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml,javafx.graphics,javafx.web",
+                "-d",
+                "out",
+                "src\\module-info.java",
+                "src\\app\\*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run WMRTApp (Module)",
+      "request": "launch",
+      "mainClass": "app/app.WMRTApp",
+      "javaExec": "C:\\Program Files\\Java\\jdk-23\\bin\\java.exe",
+      "modulePaths": [
+        "${workspaceFolder}/out",
+        "${workspaceFolder}/javafx-sdk-24.0.2/lib"
+      ],
+      "vmArgs": "--add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web",
+      "preLaunchTask": "compile-javafx"
+    },
+    {
+      "type": "java",
+      "name": "Run WMRTApp (Non-Module)",
+      "request": "launch",
+      "mainClass": "app.WMRTApp",
+      "projectName": "wastemanagement",
+      "vmArgs": "--module-path \"${workspaceFolder}/javafx-sdk-24.0.2/lib\" --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web"
+    }
+  ]
+}
